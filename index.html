@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <link rel="stylesheet" href="src/styles.css" />
+  <body>
+    <div class="container">
+      <form id="search-city">
+        <input id="input-city" type="search" placeholder="Change City..." />
+        <br />
+        <input type="submit" />
+      </form>
+      <hr />
+      <h1 id="city-weather">Shiraz Weather</h1>
+      <div class="time" id="current-time">monday 10:46</div>
+      <h2>
+        <div class="row">
+          <div class="col-4">Temperature</div>
+          <div class="col-4">Precipitation</div>
+          <div class="col-4">Wind</div>
+        </div>
+        <div class="row">
+          <div class="col-4" id="current-cantigrad">16°C</div>
+          <div class="col-4">1%</div>
+          <div class="col-4">0 mph</div>
+        </div>
+        <div class="row changeTemp">
+          <div class="col-4">
+            <a href="#" id="change-temp">change to farenhit</a>
+          </div>
+        </div>
+      </h2>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-2">Tuesday</div>
+        <div class="col-2">Wednesday</div>
+        <div class="col-2">Thursday</div>
+        <div class="col-2">Friday</div>
+        <div class="col-2">Saturday</div>
+        <div class="col-2">Sunday</div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">22 ⬆</div>
+        <div class="col-2">24 ⬆</div>
+        <div class="col-2">19 ⬆</div>
+        <div class="col-2">17 ⬆</div>
+        <div class="col-2">20 ⬆</div>
+        <div class="col-2">22 ⬆</div>
+      </div>
+      <div class="row">
+        <div class="col-2">20 ⬇</div>
+        <div class="col-2">21 ⬇</div>
+        <div class="col-2">15 ⬇</div>
+        <div class="col-2">14 ⬇</div>
+        <div class="col-2">18 ⬇</div>
+        <div class="col-2">19 ⬇</div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <img
+            src="https://img.icons8.com/office/16/000000/chance-of-storm.png"
+            width="40px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="https://img.icons8.com/office/16/000000/partly-cloudy-rain.png"
+            width="40px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="https://img.icons8.com/office/16/000000/summer.png"
+            width="40px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="https://img.icons8.com/office/16/000000/clouds.png"
+            width="40px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="https://img.icons8.com/office/16/000000/heavy-rain.png"
+            width="40px"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            src="https://img.icons8.com/office/16/000000/wind--v1.png"
+            width="40px"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
