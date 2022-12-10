@@ -3,6 +3,7 @@
   text-align: center;
   border: 3px solid #ccc;
   margin-top: 25px;
+  margin-bottom: 25px;
   padding: 20px;
   max-width: 1000px;
   border-radius: 15px;
@@ -101,4 +102,9 @@ input[type="submit"]:hover {
   border: 1px solid rgb(26, 233, 60);
   cursor: pointer;
   transition: all 300ms ease-in-out;
+}
+.github {
+  font-size: small;
+  text-align: left;
+  padding-top: 25px;
 }
