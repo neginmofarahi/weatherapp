@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>weather app</title>
+
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <link rel="stylesheet" href="src/styles.css" />
   <body>
     <div class="container">
       <form id="search-city">
@@ -18,24 +23,24 @@
         <br />
         <input type="submit" />
       </form>
+
+      <button type="button" class="btn btn-primary" id="current-loc-button">
+        current location
+      </button>
+
       <hr />
       <h1 id="city-weather">Shiraz Weather</h1>
       <div class="time" id="current-time">monday 10:46</div>
       <h2>
         <div class="row">
           <div class="col-4">Temperature</div>
-          <div class="col-4">Precipitation</div>
+          <div class="col-4">Humidity</div>
           <div class="col-4">Wind</div>
         </div>
         <div class="row">
-          <div class="col-4" id="current-cantigrad">16°C</div>
-          <div class="col-4">1%</div>
-          <div class="col-4">0 mph</div>
-        </div>
-        <div class="row changeTemp">
-          <div class="col-4">
-            <a href="#" id="change-temp">change to farenhit</a>
-          </div>
+          <div class="col-4" id="current-temp">16°C</div>
+          <div class="col-4" id="current-humidity">1%</div>
+          <div class="col-4" id="current-wind">0 mph</div>
         </div>
       </h2>
       <br />
